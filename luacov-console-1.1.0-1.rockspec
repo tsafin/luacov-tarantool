@@ -1,17 +1,18 @@
-package = "luacov-console"
+package = "luacov-tarantool"
 version = "1.1.0-1"
 source = {
-    url = "git://github.com/spacewander/luacov-console",
+    url = "git://github.com/tsafin/luacov-tarantool",
     tag = "1.1",
 }
 description = {
     summary = "Combine luacov with your development cycle and CI",
     detailed = "Combine luacov with your development cycle and CI",
-    homepage = "https://github.com/spacewander/luacov-console",
+    homepage = "https://github.com/tsafin/luacov-tarantool",
     license = "MIT"
 }
 dependencies = {
     "lua >= 5.1",
+    "tarantool >= 1.10",
     "luacov > 0.5",
     "luafilesystem",
     "argparse",
@@ -25,7 +26,7 @@ build = {
    },
    install = {
       bin = {
-         ["luacov-console"] = "src/luacov-console.lua",
+         ["luacov-tarantool"] = "src/luacov-tarantool.lua",
       }
    },
 }

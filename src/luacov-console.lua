@@ -45,7 +45,7 @@ local function index()
     end
     if report_file_ctime > idx_file_ctime then
         print_error(report_file, " was changed after ", idx_file, " created."..
-            " Please rerun luacov-console <dir> to recreate the index.")
+            " Please rerun luacov-tarantool <dir> to recreate the index.")
     end
 
     local idx = {
@@ -163,7 +163,7 @@ local function print_summary(no_colored)
     file:close()
 end
 
-local parser = argparse("luacov-console",
+local parser = argparse("luacov-tarantool",
                         "Combine luacov with your development cycle and CI")
 parser:argument("workdir", "Specific the source directory", '.')
 parser:option("--version", "Print version"):args(0)
