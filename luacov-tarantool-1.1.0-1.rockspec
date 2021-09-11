@@ -22,7 +22,7 @@ build = {
    -- I hope it's simple enough to use without any docs
    copy_directories = {},
    modules = {
-      ['luacov.reporter.console'] = "src/luacov/reporter/console.lua",
+      ['luacov.reporter.tarantool'] = "src/luacov/reporter/tarantool.lua",
    },
    install = {
       bin = {

@@ -2,7 +2,7 @@
 
 local luacov = require("luacov.runner")
 local configuration = luacov.load_config()
-local reporter = require("luacov.reporter.console")
+local reporter = require("luacov.reporter.tarantool")
 local argparse = require("argparse")
 local lfs = require('lfs')
 
